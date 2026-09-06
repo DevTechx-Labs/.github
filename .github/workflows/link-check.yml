@@ -1,0 +1,54 @@
+name: Link check
+
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+      - 'profile/assets/**'
+      - '.github/workflows/link-check.yml'
+      - '.lychee.toml'
+  push:
+    branches: [main]
+    paths:
+      - '**/*.md'
+      - 'profile/assets/**'
+      - '.github/workflows/link-check.yml'
+      - '.lychee.toml'
+  schedule:
+    - cron: '17 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: link-check-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  links:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Check local links on changes
+        if: github.event_name == 'pull_request' || github.event_name == 'push'
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          args: --config .lychee.toml --offline './**/*.md'
+          lycheeVersion: v0.24.2
+          fail: true
+          failIfEmpty: true
+          jobSummary: true
+      - name: Check all links on scheduled or manual runs
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          args: --config .lychee.toml './**/*.md'
+          lycheeVersion: v0.24.2
+          fail: true
+          failIfEmpty: true
+          jobSummary: true

@@ -1,0 +1,40 @@
+name: Feature request
+description: Describe a problem and propose a useful improvement.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing requests first. Explain the need before implementation details.
+        A request starts a discussion; it does not establish a delivery commitment.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to accomplish, and what gets in the way?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe the behavior or outcome you would like.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: What other approaches or workarounds have you considered?
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use case
+      description: Who would use this, in what workflow, and how would it help?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add relevant examples or constraints without sharing private information.

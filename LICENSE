@@ -1,0 +1,37 @@
+DevTechx Labs — repository rights notice
+
+Original documentation and repository tooling
+-------------------------------------------
+No general software or documentation reuse license has been selected for the
+original content of this repository. Publishing these files on GitHub does not,
+by itself, grant an unrestricted license. Rights and permissions available under
+applicable law or the hosting platform's terms are unaffected by this notice.
+
+An organization/community-profile repository does not require a software license
+to be published. This notice records the absence of a general license decision;
+it is not an open-source license and does not license other DevTechx Labs projects.
+Each software repository needs its own explicit license decision.
+
+Third-party material
+--------------------
+CODE_OF_CONDUCT.md is an adaptation of Contributor Covenant version 3.0,
+stewarded by the Organization for Ethical Source. That file, including this
+repository's adaptations, is licensed under Creative Commons Attribution-ShareAlike
+4.0 International. The general notice above does not restrict that license.
+
+Source: https://www.contributor-covenant.org/version/3/0/code_of_conduct/
+License: https://creativecommons.org/licenses/by-sa/4.0/
+Legal text: https://creativecommons.org/licenses/by-sa/4.0/legalcode.en
+Changes: shortened language and organization-specific reporting, responsibility,
+and conflict-of-interest guidance. No endorsement by the original authors is implied.
+
+Name, logos, and visual identity
+-------------------------------
+The DevTechx Labs name, logos, marks, and visual identity assets are proprietary
+brand assets of DevTechx Labs. They are not granted for unrestricted third-party
+branding use merely because they are present in a public repository. No trademark
+license or permission to imply endorsement is granted here.
+
+This includes the supplied artwork in input/ and derivatives in profile/assets/.
+See BRAND_ASSETS.md for usage guidance. This notice does not claim trademark
+registration or remove rights available under applicable law.

@@ -1,0 +1,10 @@
+# Do not ignore HTTP failures or disable certificate verification.
+timeout = 20
+max_retries = 2
+max_concurrency = 4
+accept = ["200..=299"]
+include_mail = false
+hidden = true
+exclude_loopback = true
+exclude_private = true
+exclude_path = ["node_modules", ".git", "lychee"]

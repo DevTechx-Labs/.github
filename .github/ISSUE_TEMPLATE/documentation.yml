@@ -1,0 +1,35 @@
+name: Documentation improvement
+description: Report unclear, missing, or incorrect documentation.
+title: "[Docs]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Point to the specific page or task that needs clearer guidance.
+        Use the bug form for software defects and private channels for sensitive reports.
+  - type: input
+    id: area
+    attributes:
+      label: Documentation area
+      description: Name the page, section, file, or workflow.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is missing, misleading, outdated, or difficult to follow?
+    validations:
+      required: true
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Suggested improvement
+      description: Describe what would help, even if you do not have exact wording.
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Relevant links
+      description: Add public documentation links or related issues. Do not include private URLs.

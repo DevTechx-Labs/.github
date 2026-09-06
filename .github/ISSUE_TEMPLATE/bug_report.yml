@@ -1,0 +1,61 @@
+name: Bug report
+description: Report a reproducible problem in this repository or project.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search existing issues first. Include only sanitized examples and logs.
+        Do not report vulnerabilities here. Use the repository's private reporting
+        option under Security and quality when available, and follow its security policy.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is broken, and who or what is affected?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide a minimal example and the steps needed to reproduce the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include relevant operating system, browser, runtime, and deployment details.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Supply a release, commit, or the date observed for an unversioned page.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Remove secrets, personal data, private URLs, and customer information.
+      render: text
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Include relevant screenshots or workarounds, if helpful.

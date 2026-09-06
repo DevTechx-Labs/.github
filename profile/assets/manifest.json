@@ -1,0 +1,58 @@
+{
+  "source_sha256": "155cedd67e570fa661526a5a08f56bb09320c6f741ced195c1383bc03e644e75",
+  "visible_bounds": [
+    188,
+    277,
+    1099,
+    966
+  ],
+  "avatar_symbol_width_percent": 72,
+  "font": [
+    "Avenir Next",
+    "Regular"
+  ],
+  "assets": {
+    "devtechx-avatar.png": {
+      "bytes": 453242,
+      "dimensions": [
+        1024,
+        1024
+      ]
+    },
+    "devtechx-github-banner-mobile.png": {
+      "bytes": 92949,
+      "dimensions": [
+        800,
+        600
+      ]
+    },
+    "devtechx-github-banner.png": {
+      "bytes": 158243,
+      "dimensions": [
+        1600,
+        480
+      ]
+    },
+    "devtechx-logo-small.png": {
+      "bytes": 111286,
+      "dimensions": [
+        512,
+        512
+      ]
+    },
+    "devtechx-logo.png": {
+      "bytes": 904696,
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "social-preview.png": {
+      "bytes": 142802,
+      "dimensions": [
+        1280,
+        640
+      ]
+    }
+  }
+}
